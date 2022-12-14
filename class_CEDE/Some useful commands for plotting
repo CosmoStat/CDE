@@ -1,0 +1,5 @@
+python  CPU.py  output/my_model_cl_lensed.dat
+python  CPU.py  output/my_model_cl.dat -y TT --scale  loglin
+python  CPU.py  output/my_model_pk.dat
+python  CPU.py --help 
+ 
