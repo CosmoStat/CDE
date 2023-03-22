@@ -75,8 +75,6 @@ cdef extern from "class.h":
         double beta_1
         double beta_2
         double beta_3
-        double ORD
-        double alpha
 
    
 
