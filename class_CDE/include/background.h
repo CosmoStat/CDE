@@ -100,7 +100,6 @@ struct background
   double beta_1;             /**< (constant) coupling constant for bin 1*/
   double beta_2;             /**< (constant) coupling constant for bin 2*/
   double beta_3;             /**< (constant) coupling constant for bin 3*/
-  double zbin;              /** turn beta binning on */
 /* */
 
   double Omega0_k; /**< \f$ \Omega_{0_k} \f$: curvature contribution */
