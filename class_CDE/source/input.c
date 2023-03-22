@@ -671,7 +671,7 @@ int input_read_parameters(
   class_call(parser_read_double(pfc,"Omega_b_tilde",&param1,&flag1,errmsg),
              errmsg,
              errmsg);
-  class_call(parser_read_double(pfc,"omega_b_tilde",&param2,&flag2,errmsg),
+  class_call(parser_read_double(pfc,"omega_b",&param2,&flag2,errmsg),
              errmsg,
              errmsg);
   class_test(((flag1 == _TRUE_) && (flag2 == _TRUE_)),
