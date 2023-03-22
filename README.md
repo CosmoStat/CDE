@@ -6,4 +6,4 @@ We have also included a notebook to reproduce Figures 2, 3 and 12 of our paper.
 
 All the changes and new parts of code implemented in class_CDE are duly indicated with the text /* NEW */. 
 
-We describe what are the input parameters required by the code in the input.c file.
+We describe what are the input parameters employed by class_CDE in the CDE.ini file.
