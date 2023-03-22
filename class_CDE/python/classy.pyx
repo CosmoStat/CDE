@@ -1646,10 +1646,6 @@ cdef class Class:
                 value = self.ba.beta_2
             elif name == 'beta_3':
                 value = self.ba.beta_3
-            elif name == 'ORD':
-                value = self.ba.ORD           
-            elif name == 'alpha':
-                value = self.ba.alpha
 
             # NEW
             elif name == 'sigma12':
