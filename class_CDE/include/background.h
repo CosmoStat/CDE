@@ -97,7 +97,6 @@ struct background
   double kappa;             /**< 2D V0 = kappa*(70 km/s/Mpc)^2 \sim kappa*0.00023 Mpc^{-1} */
                             /** To see the numerical relation that this parameter has with the \bar{kappa} of the MPLA and PDU cf. classy.pyx file */
    
-  double beta_0;             /**< (constant) coupling constant */
   double beta_1;             /**< (constant) coupling constant for bin 1*/
   double beta_2;             /**< (constant) coupling constant for bin 2*/
   double beta_3;             /**< (constant) coupling constant for bin 3*/
