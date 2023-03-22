@@ -772,10 +772,8 @@ int input_read_parameters(
   class_read_double("beta_1",pba->beta_1);
   class_read_double("beta_2",pba->beta_2);
   class_read_double("beta_3",pba->beta_3);
-  class_read_double("ORD",pba->ORD);
+  
   class_read_double("kappa",pba->kappa);
-  class_read_double("alpha",pba->alpha);
-
   
   class_call(parser_read_double(pfc,"phi_ini_scf",&param1,&flag1,errmsg),
              errmsg,
@@ -793,7 +791,7 @@ int input_read_parameters(
   if (flag1 == _TRUE_)
       pba->phi_prime_ini_scf = param1;
   else 
-    pba->phi_prime_ini_scf =  2*pow(10,16)*sqrt((pba->Omega_g_tilde+pba->Omega_ur_tilde)*pow(0.7,2)/3.)*sqrt(pba->ORD/(1-pba->ORD))/299792.458;
+    pba->phi_prime_ini_scf =   0;
 
 
  /**/
