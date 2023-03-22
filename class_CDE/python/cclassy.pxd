@@ -66,7 +66,7 @@ cdef extern from "class.h":
         double Omega0_k
         int bt_size
 # NEW
-        double omega_b_tilde
+        double omega_b
         double omega_cdm_tilde
         double kappa
         double phi_ini_scf
