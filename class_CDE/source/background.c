@@ -297,7 +297,9 @@ int background_functions(
   rho_r += pvecback[pba->index_bg_rho_g];
 
   /* baryons */
+  /* NEW */
   pvecback[pba->index_bg_rho_b] = pba->Omega_b_tilde * pow(70000/_c_,2) / pow(a_rel,3);
+  /* */	
   rho_tot += pvecback[pba->index_bg_rho_b];
   p_tot += 0;
   rho_m += pvecback[pba->index_bg_rho_b];
@@ -2371,8 +2373,9 @@ int background_derivs(
   /** - solve second order growth equation  \f$ [D''(\tau)=-aHD'(\tau)+3/2 a^2 \rho_M D(\tau) \f$ */
   
   /* NEW */
-  /* This equation is not exact, but I have explicitly checked that the relative error is very small (<1%) by 
-  comparing these values with the ones from the perturbations module at deep subhorizon scales. This equation is not employed in the likelihoods neither  */  
+  /* This equation is not exact, but we have explicitly checked that the relative error is very small (<1%) by 
+  comparing these values with the ones from the perturbations module at deep subhorizon scales. This equation should not employed in 
+  the computation of the likelihoods */  
   rho_M = pvecback[pba->index_bg_rho_b];
   if (pba->has_cdm)
     rho_M += pvecback[pba->index_bg_rho_cdm];
@@ -2441,7 +2444,7 @@ double V_scf(
              struct background *pba,
              double phi) {
 
-    return pba->kappa*pow(70000/_c_,2)/pow(phi,pba->alpha);
+    return pba->kappa*pow(70000/_c_,2);
                    
 }
 
@@ -2449,13 +2452,13 @@ double V_scf(
 double dV_scf(
               struct background *pba,
 	      double phi) {
-    return -pba->alpha*pba->kappa*pow(70000/_c_,2)/pow(phi,pba->alpha+1);                
+    return 0;                
 }
 
 double ddV_scf(
                struct background *pba,
                double phi) {
-    return pba->alpha*(pba->alpha+1)*pba->kappa*pow(70000/_c_,2)/pow(phi,pba->alpha+2);
+    return 0;
 }
 
 double beta(
