@@ -3,3 +3,7 @@ This repository contains the modified CLASS code that we have used to run our an
 We have included the version with a 3-bin parameterisation, with bin edges z={0,100,1000}. 
 
 We have also included a notebook to reproduce Figures 2,3 and 12 of our paper. 
+
+All the changes and new parts of code implemented in class_CDE are duly indicated with the text /* NEW */. 
+
+We describe what are the input parameters required by the code in the input.c file.
