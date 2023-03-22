@@ -96,8 +96,7 @@ struct background
   double Omega_ur_tilde;     /**< pow(H0/70 km/s/Mpc,2)*Omega0_ur */
   double kappa;             /**< 2D V0 = kappa*(70 km/s/Mpc)^2 \sim kappa*0.00023 Mpc^{-1} */
                             /** To see the numerical relation that this parameter has with the \bar{kappa} of the MPLA and PDU cf. classy.pyx file */
-  double ORD;               /**< EDE fraction in the RDE */    
-  double alpha;             /**PR potential alpha */   
+   
   double beta_0;             /**< (constant) coupling constant */
   double beta_1;             /**< (constant) coupling constant for bin 1*/
   double beta_2;             /**< (constant) coupling constant for bin 2*/
