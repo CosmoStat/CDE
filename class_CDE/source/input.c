@@ -2963,11 +2963,7 @@ int input_default_params(
   pba->Omega0_scf = 0.; /* Scalar field defaults */
   /* NEW */ 
   pba->kappa = 0.7;
-  pba->ORD = 0.0000001;
-
   pba->attractor_ic_scf = _FALSE_;
-  pba->alpha = 0;
-  pba->zbin = 0;
   /*pba->scf_parameters = NULL;
   pba->scf_parameters_size = 0;
   pba->scf_tuning_index = 0;*/
